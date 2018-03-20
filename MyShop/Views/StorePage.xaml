@@ -199,9 +199,17 @@
 					HorizontalOptions="End"
 					VerticalOptions="Center"/>
 
-
-				<Label
+                <Button 
+					x:Name="ButtonReviewStore"
 					Grid.Row="11"
+                    Grid.ColumnSpan="3"
+					BackgroundColor="#81C134"
+					BorderRadius="0"
+					TextColor="White" 
+					Text="Review"/>
+
+                <Label
+					Grid.Row="12"
 					Grid.ColumnSpan="3" 
 					FontAttributes="Bold"
 					FontSize="Medium"
@@ -209,13 +217,13 @@
 					TextColor="#3498DB"/>
 
 				<Label
-					Grid.Row="12"
+					Grid.Row="13"
 					Grid.Column="1" 
 					Grid.ColumnSpan="2"
 					FontSize="Small"
 					Text="{Binding Address1}"/>
 				<Label
-					Grid.Row="13"
+					Grid.Row="14"
 					Grid.Column="1" 
 					Grid.ColumnSpan="2"
 					FontSize="Small"
@@ -223,7 +231,7 @@
 
 
 				<Button 
-					Grid.Row="12"
+					Grid.Row="13"
 					Grid.RowSpan="2"
 					BackgroundColor="#3498DB" 
 					BorderRadius="0"
@@ -233,7 +241,7 @@
 					Command="{Binding NavigateCommand}"
 					VerticalOptions="FillAndExpand"/>
 
-				<!--<maps:Map Grid.Row="14"
+				<!--<maps:Map Grid.Row="15"
 						Grid.ColumnSpan="3" 
 			            x:Name="MyMap"
 			            IsShowingUser="false"
