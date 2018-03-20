@@ -26,9 +26,8 @@
 					<RowDefinition Height="Auto"/>
 					<RowDefinition Height="Auto"/>
 					<RowDefinition Height="Auto"/>
-					<RowDefinition Height="Auto"/>
-					<RowDefinition Height="250"/>
-				</Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width=".5*"/>
 					<ColumnDefinition Width=".1*"/>
@@ -199,9 +198,18 @@
 					HorizontalOptions="End"
 					VerticalOptions="Center"/>
 
+                <Button 
+				    x:Name="ButtonReviewStore"
+				    Grid.Row="11"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+				    BackgroundColor="#81C134" 
+				    BorderRadius="0"
+				    TextColor="White"
+				    Text="Leave Review"/>
 
-				<Label
-					Grid.Row="11"
+                <Label
+					Grid.Row="12"
 					Grid.ColumnSpan="3" 
 					FontAttributes="Bold"
 					FontSize="Medium"
@@ -209,21 +217,20 @@
 					TextColor="#3498DB"/>
 
 				<Label
-					Grid.Row="12"
+					Grid.Row="13"
 					Grid.Column="1" 
 					Grid.ColumnSpan="2"
 					FontSize="Small"
 					Text="{Binding Address1}"/>
 				<Label
-					Grid.Row="13"
+					Grid.Row="14"
 					Grid.Column="1" 
 					Grid.ColumnSpan="2"
 					FontSize="Small"
 					Text="{Binding Address2}"/>
 
-
 				<Button 
-					Grid.Row="12"
+					Grid.Row="13"
 					Grid.RowSpan="2"
 					BackgroundColor="#3498DB" 
 					BorderRadius="0"
@@ -233,12 +240,13 @@
 					Command="{Binding NavigateCommand}"
 					VerticalOptions="FillAndExpand"/>
 
-				<!--<maps:Map Grid.Row="14"
-						Grid.ColumnSpan="3" 
-			            x:Name="MyMap"
-			            IsShowingUser="false"
-		        	    MapType="Hybrid"/>-->
-			</Grid>
+                <!--<maps:Map Grid.Row="15"
+                          Grid.ColumnSpan="3"
+                          x:Name="MyMap"
+                          IsShowingUser="False"
+                          MapType="Hybrid"/>-->
+
+            </Grid>
 		</ScrollView>
 	</ContentPage.Content>
 </ContentPage>
