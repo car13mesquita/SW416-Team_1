@@ -1,6 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>MyShop</AssemblyName>
+    <RootNamespace>MyShop</RootNamespace>
+    <ApplicationIcon />
+    <Win32Resource />
   </PropertyGroup>
   <ItemGroup>
     <None Remove="stores.json" />

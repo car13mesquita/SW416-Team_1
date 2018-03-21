@@ -31,14 +31,7 @@
 				BorderRadius="0"
 				TextColor="White" 
 				Text="Search Eateries"/>
-			<!--<Button 
-				x:Name="ButtonLeaveFeedback"
-				Grid.Row="1"
-				Grid.Column="1"
-				BackgroundColor="#81C134" 
-				BorderRadius="0"
-				TextColor="White"
-				Text="Leave Feedback"/>-->
+		
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>

@@ -24,11 +24,6 @@ namespace MyShop
             {
                 HeroImage.Source = ImageSource.FromFile("herotablet.jpg");
             }
-
-            //ButtonLeaveFeedback.Clicked += async (sender, e) =>
-            //{
-            //    await Navigation.PushAsync(new FeedbackPage());
-            //};
         }
     }
 }
