@@ -130,17 +130,14 @@
 	        </Picker.Items>
         </Picker>
 
-
-
-
-		<Label
+        <Label
 			Grid.Row="4"
 			FontSize="Medium"
 			Text="Name:"
 			TextColor="#3498DB"
-			VerticalOptions="Center"  />
+			VerticalOptions="Center"/>
 
-		<Entry 
+        <Entry 
 			Grid.Row="4"
 			Grid.Column="1"
 			Text="{Binding Name}"
@@ -152,7 +149,7 @@
 			FontSize="Medium"
 			Text="Phone:"
 			TextColor="#3498DB"
-			VerticalOptions="Center"  />
+			VerticalOptions="Center"/>
 
         
 		<Entry 
@@ -162,7 +159,7 @@
 			Placeholder="555-555-5555"
 			Keyboard="Telephone" />
 
-		<Switch 
+		<!--<Switch 
 			Grid.Row="6"
 			IsToggled="{Binding RequiresCall, Mode=TwoWay}"/>
 
@@ -172,26 +169,24 @@
 			FontSize="Medium"
 			Text="Request Callback"
 			TextColor="#3498DB"
-			VerticalOptions="Center"  />
+			VerticalOptions="Center"  />-->
 
 		<Label
 			Grid.Row="7"
 			FontAttributes="Bold"
 			FontSize="Medium"
-			Text="Feedback:"
+			Text="Review:"
 			TextColor="#3498DB"
 			VerticalOptions="Center"  />
 
 		<Editor 
 			Grid.Row="7"
-      Grid.RowSpan="2"
-      Grid.Column="1"
+            Grid.RowSpan="2"
+            Grid.Column="1"
 			Grid.ColumnSpan="1"
 			HeightRequest="150"
 			Text="{Binding Text}"
-			BackgroundColor="#103498DB"
-			
-			/>
+			BackgroundColor="#103498DB"	/>
 
 		
 	</Grid>
