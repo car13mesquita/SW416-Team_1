@@ -278,6 +278,8 @@
     <AndroidResource Include="Resources\layout\tabs.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\drawable\herot.jpg" />
+    <AndroidResource Include="Resources\drawable\bowl.jpg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -37,7 +37,6 @@
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Distribution: James Montemagno (8P95D2238B)</CodesignKey>
     <MtouchUseLlvm>True</MtouchUseLlvm>
-    <MtouchUseSGen>True</MtouchUseSGen>
     <MtouchI18n>
     </MtouchI18n>
     <MtouchSdkVersion>8.3</MtouchSdkVersion>
@@ -56,7 +55,6 @@
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Distribution: James Montemagno (8P95D2238B)</CodesignKey>
     <MtouchUseLlvm>True</MtouchUseLlvm>
-    <MtouchUseSGen>True</MtouchUseSGen>
     <MtouchI18n>
     </MtouchI18n>
     <CodesignProvision>7bc4f703-c4ba-4e0f-a4ee-1885f9a85662</CodesignProvision>
@@ -79,7 +77,6 @@
     <MtouchProfiling>true</MtouchProfiling>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchI18n>
     </MtouchI18n>
   </PropertyGroup>
@@ -89,9 +86,7 @@
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Distribution: James Montemagno (8P95D2238B)</CodesignKey>
     <MtouchUseLlvm>true</MtouchUseLlvm>
-    <MtouchUseSGen>true</MtouchUseSGen>
     <BuildIpa>True</BuildIpa>
-    <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchI18n>
     </MtouchI18n>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
@@ -243,6 +238,7 @@
     <BundleResource Include="Resources\phone.png" />
     <BundleResource Include="Resources\phone%402x.png" />
     <BundleResource Include="Resources\phone%403x.png" />
+    <BundleResource Include="Resources\bowl.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -268,7 +264,7 @@
     <BundleResource Include="Resources\hero%402x.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\hero.jpg" />
+    <BundleResource Include="Resources\hero1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\herotablet.jpg" />
