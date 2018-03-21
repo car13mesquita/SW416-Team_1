@@ -64,7 +64,7 @@ namespace MyShop
 			MainPage = new NavigationPage(new HomePage())
 			{
 				BarTextColor = Color.White,
-                BarBackgroundColor = Color.FromHex("#89F4AF")
+                BarBackgroundColor = Color.FromHex("#89F4B4")
 			};
 		}
 

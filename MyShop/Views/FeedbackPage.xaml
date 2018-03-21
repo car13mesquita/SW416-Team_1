@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
 	xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
@@ -58,7 +58,7 @@
 			FontAttributes="Bold"
 			FontSize="Medium"
 			Text="Store:"
-			TextColor="#3498DB" />
+			TextColor="#74CF9A" />
 
 		<Picker 
 			x:Name="PickerStore"
@@ -71,7 +71,7 @@
 			FontAttributes="Bold"
 			FontSize="Medium"
 			Text="Service:"
-			TextColor="#3498DB" />
+			TextColor="#74CF9A" />
 
 		<Picker 
 			x:Name="PickerServiceType"
@@ -94,7 +94,7 @@
 			FontAttributes="Bold"
 			FontSize="Medium"
 			Text="Date:"
-			TextColor="#3498DB"
+			TextColor="#74CF9A"
 			VerticalOptions="Center" />
 
 		<DatePicker 
@@ -107,7 +107,7 @@
 			FontAttributes="Bold"
 			FontSize="Medium"
 			Text="Rating:"
-			TextColor="#3498DB"
+			TextColor="#74CF9A"
 			VerticalOptions="Center"  />
 
 		<Picker
@@ -134,7 +134,7 @@
 			Grid.Row="4"
 			FontSize="Medium"
 			Text="Name:"
-			TextColor="#3498DB"
+			TextColor="#74CF9A"
 			VerticalOptions="Center"/>
 
         <Entry 
@@ -148,7 +148,7 @@
 			Grid.Row="5"
 			FontSize="Medium"
 			Text="Phone:"
-			TextColor="#3498DB"
+			TextColor="#74CF9A"
 			VerticalOptions="Center"/>
 
         
@@ -176,7 +176,7 @@
 			FontAttributes="Bold"
 			FontSize="Medium"
 			Text="Review:"
-			TextColor="#3498DB"
+			TextColor="#74CF9A"
 			VerticalOptions="Center"  />
 
 		<Editor 
@@ -194,7 +194,7 @@
 	</ScrollView>
 	<Button 
 			x:Name="ButtonSubmitFeedback"
-			BackgroundColor="#3498DB"
+			BackgroundColor="#74CF9A"
 			BorderRadius="0"
 			TextColor="White" 
 			Text="Submit"

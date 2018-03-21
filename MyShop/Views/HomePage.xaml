@@ -27,7 +27,7 @@
 				x:Name="ButtonFindStore"
 				Grid.Row="1"
                 Grid.ColumnSpan="2"
-				BackgroundColor="#3498DB"
+				BackgroundColor="#74CF9A"
 				BorderRadius="0"
 				TextColor="White" 
 				Text="Search Eateries"/>
