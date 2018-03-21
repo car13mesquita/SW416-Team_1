@@ -49,7 +49,7 @@ namespace MyShop
         public string SundayClose { get; set; } = string.Empty;
 
         public string PhoneNumber { get; set; } = string.Empty;
-        public string LocationCode { get; set; } = string.Empty;
+        public string Category { get; set; } = string.Empty;
 
 
     }

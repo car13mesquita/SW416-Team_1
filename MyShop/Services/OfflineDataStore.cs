@@ -25,7 +25,7 @@ namespace MyShop.Services
             var emailTask = CrossMessaging.Current.EmailMessenger;
             if (emailTask.CanSendEmail)
             {
-                emailTask.SendEmail("james.montemagno@xamarin.com", "My Shop Feedback", feedback.ToString());
+                emailTask.SendEmail("", "My Shop Feedback", feedback.ToString());
             }
 
             return await Task.Run(() => { return feedback; });

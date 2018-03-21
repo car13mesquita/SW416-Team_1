@@ -12,8 +12,12 @@ namespace MyShop
         public StorePage(Store store)
         {
             InitializeComponent();
-
             BindingContext = viewModel = new StoreViewModel(store, this);
+
+            ButtonReviewStore.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new FeedbackPage());
+            };
 
         }
         //Xamarin.Forms.Maps.Map MyMap;

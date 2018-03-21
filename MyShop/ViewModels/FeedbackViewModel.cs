@@ -12,7 +12,7 @@ namespace MyShop
         public FeedbackViewModel(Page page) : base(page)
         {
             dataStore = DependencyService.Get<IDataStore>();
-            Title = "Leave Feedback";
+            Title = "Leave Review";
         }
 
         public async Task<IEnumerable<Store>> GetStoreAsync()
@@ -55,11 +55,11 @@ namespace MyShop
 
             if (string.IsNullOrWhiteSpace(Text))
             {
-                await page.DisplayAlert("Enter Feedback", "Please enter some feedback for our team.", "OK");
+                await page.DisplayAlert("Enter Review", "Please enter some review for our team.", "OK");
                 return;
             }
 
-            Message = "Submitting feedback...";
+            Message = "Submitting review...";
             IsBusy = true;
             saveFeedbackCommand?.ChangeCanExecute();
 
@@ -80,7 +80,7 @@ namespace MyShop
             }
             catch (Exception ex)
             {
-                await page.DisplayAlert("Uh Oh :(", "Unable to save feedback, please try again.", "OK");
+                await page.DisplayAlert("Uh Oh :(", "Unable to save review, please try again.", "OK");
             }
             finally
             {
