@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShop.Android", "MyShop.Android.csproj", "{1FBB5AB6-8432-4478-BF33-EB1E26F20945}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FBB5AB6-8432-4478-BF33-EB1E26F20945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FBB5AB6-8432-4478-BF33-EB1E26F20945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FBB5AB6-8432-4478-BF33-EB1E26F20945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FBB5AB6-8432-4478-BF33-EB1E26F20945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FBB5AB6-8432-4478-BF33-EB1E26F20945}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{1FBB5AB6-8432-4478-BF33-EB1E26F20945}.AppStore|iPhone.Build.0 = AppStore|iPhone
+	EndGlobalSection
+EndGlobal
