@@ -222,16 +222,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Icon-60%402x.png" />
     <BundleResource Include="Resources\Icon-60%403x.png" />
     <BundleResource Include="Resources\Icon-76%402x.png" />
     <BundleResource Include="Resources\Icon-76.png" />
-    <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
-    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
     <BundleResource Include="Resources\Icon-Small-40%403x.png" />
     <BundleResource Include="Resources\Icon-Small-40.png" />
-    <BundleResource Include="Resources\Icon-Small.png" />
     <BundleResource Include="Resources\navigation.png" />
     <BundleResource Include="Resources\navigation%402x.png" />
     <BundleResource Include="Resources\navigation%403x.png" />
@@ -239,6 +235,7 @@
     <BundleResource Include="Resources\phone%402x.png" />
     <BundleResource Include="Resources\phone%403x.png" />
     <BundleResource Include="Resources\bowl.jpg" />
+    <BundleResource Include="Resources\restaurant.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -271,6 +268,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\3.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\load1.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\load2.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\load3.png" />
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
