@@ -13,7 +13,7 @@ using Xamarin.Forms.Platform.Android;
 
 namespace MyShop.Droid
 {
-	[Activity (Label = "Free Munch", Icon = "@drawable/ic_launcher", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
+	[Activity (Label = "Free Munch", Icon = "@drawable/ic_launcher", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.FullUser)]
 	public class MainActivity : FormsAppCompatActivity
     {
 		protected override void OnCreate (Bundle bundle)
