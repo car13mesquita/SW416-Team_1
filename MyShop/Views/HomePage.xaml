@@ -26,11 +26,19 @@
 			<Button 
 				x:Name="ButtonFindStore"
 				Grid.Row="1"
-                Grid.ColumnSpan="2"
+                Grid.Column="0"
 				BackgroundColor="#74CF9A"
 				BorderRadius="0"
 				TextColor="White" 
 				Text="Search Eateries"/>
+            <Button 
+				x:Name="ButtonFoodList"
+				Grid.Row="1"
+                Grid.Column="1"
+				BackgroundColor="#74CF9A"
+				BorderRadius="0"
+				TextColor="White" 
+				Text="Food List"/>
 		
 		</Grid>
 	</ContentPage.Content>

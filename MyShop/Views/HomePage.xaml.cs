@@ -20,6 +20,11 @@ namespace MyShop
                     await Navigation.PushAsync(new StoresPage());
             };
 
+            ButtonFoodList.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new FoodListPage());
+            };
+
             if (Device.Idiom == TargetIdiom.Tablet)
             {
                 HeroImage.Source = ImageSource.FromFile("herotablet.jpg");
