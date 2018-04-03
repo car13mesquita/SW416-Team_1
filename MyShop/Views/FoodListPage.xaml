@@ -12,36 +12,33 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Label 
+                <StackLayout
                     Grid.Row="1"
                     Grid.ColumnSpan="3"
-                    FontSize="Small"
-                    Text="Ethnicity"
-                    HorizontalOptions="Center"/>
-                <Label 
-                    Grid.Row="2"
-                    Grid.ColumnSpan="3"
-                    FontSize="Small"
-                    Text="Dietary Restrictions"
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="Center">
+                    <Label 
+                        FontSize="Medium"
+                        Text="Ethnicity"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        Text="Choose"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"
+                        Clicked="OnClick" />
+                    <Label
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"
+                        x:Name="results" />
+                </StackLayout>
+                
             </Grid>
         </ScrollView>
     </ContentPage.Content>
