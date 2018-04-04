@@ -17,17 +17,19 @@ namespace MyShop
         async void OnClick(object sender, EventArgs ea)
         {
             var items = new List<CheckItem>();
-            items.Add(new CheckItem { Name = "American" });
-            items.Add(new CheckItem { Name = "Chinese" });
-            items.Add(new CheckItem { Name = "Italian" });
-            items.Add(new CheckItem { Name = "Japanese" });
-            items.Add(new CheckItem { Name = "French" });
-            items.Add(new CheckItem { Name = "Greek" });
-            items.Add(new CheckItem { Name = "Thai" });
-            items.Add(new CheckItem { Name = "Spanish" });
-            items.Add(new CheckItem { Name = "Indian" });
-            items.Add(new CheckItem { Name = "Mediterranean" });
-            items.Add(new CheckItem { Name = "Mexican" });
+            items.Add(new CheckItem { Name = "Allergy - Dairy" });
+            items.Add(new CheckItem { Name = "Allergy - Eggs" });
+            items.Add(new CheckItem { Name = "Allergy - Fish" });
+            items.Add(new CheckItem { Name = "Allergy - Peanuts" });
+            items.Add(new CheckItem { Name = "Allergy - Shellfish" });
+            items.Add(new CheckItem { Name = "Allergy - Soy" });
+            items.Add(new CheckItem { Name = "Allergy - Tree Nuts" });
+            items.Add(new CheckItem { Name = "Allergy - Wheat" });
+            items.Add(new CheckItem { Name = "Diabetic" });
+            items.Add(new CheckItem { Name = "Gluten Free" });
+            items.Add(new CheckItem { Name = "Kosher" });
+            items.Add(new CheckItem { Name = "Vegan" });
+            items.Add(new CheckItem { Name = "Vegetarian" });
 
             if (multiPage == null)
                 multiPage = new SelectMultipleBasePage<CheckItem>(items) { Title = "Check all that apply" };

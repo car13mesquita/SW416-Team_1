@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
 	xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
@@ -10,6 +10,18 @@
         <ScrollView>
             <Grid Padding="10" RowSpacing="10" ColumnSpacing="10" x:Name="MainGrid">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
@@ -24,12 +36,12 @@
                     HorizontalOptions="Center">
                     <Label 
                         FontSize="Medium"
-                        Text="Ethnicity"
+                        Text="Allergies"
                         Grid.ColumnSpan="3"
                         HorizontalOptions="Center"/>
                     <Button
                         FontSize="Medium"
-                        Text="Choose"
+                        Text="Select"
                         Grid.ColumnSpan="3"
                         HorizontalOptions="Center"
                         Clicked="OnClick" />
@@ -38,6 +50,78 @@
                         HorizontalOptions="Center"
                         x:Name="results" />
                 </StackLayout>
+                    <Label 
+                        FontSize="Medium"
+                        Text="Ethnicities"
+                        Grid.Row="2"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        Text="American"
+                        Grid.Row="3"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        Text="Chinese"
+                        Grid.Row="4"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        Text="French"
+                        Grid.Row="5"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        Text="Greek"
+                        Grid.Row="6"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        Text="Japanese"
+                        Grid.Row="7"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        Text="Indian"
+                        Grid.Row="8"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        Text="Italian"
+                        Grid.Row="9"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        Text="Mediterranean"
+                        Grid.Row="10"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        Text="Mexican"
+                        Grid.Row="11"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        Text="Spanish"
+                        Grid.Row="12"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        Text="Thai"
+                        Grid.Row="13"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
                 
             </Grid>
         </ScrollView>
