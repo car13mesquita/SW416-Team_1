@@ -4121,7 +4121,7 @@ namespace MyShop.Droid
 			public const int mr_system_route_name = 2131230755;
 			
 			// aapt resource value: 0x7f080024
-			public const int mr_user_route_ethnicity_name = 2131230756;
+			public const int mr_user_route_category_name = 2131230756;
 			
 			// aapt resource value: 0x7f08004a
 			public const int password_toggle_content_description = 2131230794;
@@ -6684,10 +6684,10 @@ namespace MyShop.Droid
 			public const int MenuGroup_android_id = 1;
 			
 			// aapt resource value: 3
-			public const int MenuGroup_android_menuEthnicity = 3;
+			public const int MenuGroup_android_menuCategory = 3;
 			
 			// aapt resource value: 4
-			public const int MenuGroup_android_orderInEthnicity = 4;
+			public const int MenuGroup_android_orderInCategory = 4;
 			
 			// aapt resource value: 2
 			public const int MenuGroup_android_visible = 2;
@@ -6739,7 +6739,7 @@ namespace MyShop.Droid
 			public const int MenuItem_android_id = 2;
 			
 			// aapt resource value: 5
-			public const int MenuItem_android_menuEthnicity = 5;
+			public const int MenuItem_android_menuCategory = 5;
 			
 			// aapt resource value: 10
 			public const int MenuItem_android_numericShortcut = 10;
@@ -6748,7 +6748,7 @@ namespace MyShop.Droid
 			public const int MenuItem_android_onClick = 12;
 			
 			// aapt resource value: 6
-			public const int MenuItem_android_orderInEthnicity = 6;
+			public const int MenuItem_android_orderInCategory = 6;
 			
 			// aapt resource value: 7
 			public const int MenuItem_android_title = 7;

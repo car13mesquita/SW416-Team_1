@@ -19,6 +19,7 @@ namespace MyShop
             dataStore = DependencyService.Get<IDataStore>();
             Stores = new ObservableRangeCollection<Store>();
             StoresGrouped = new ObservableRangeCollection<Grouping<string, Store>>();
+           
         }
         public Action<Store> ItemSelected { get; set; }
 

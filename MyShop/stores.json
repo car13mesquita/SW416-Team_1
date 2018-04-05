@@ -26,7 +26,8 @@
     "city": "Essos",
     "streetAddress": "800 Harbour Ave",
     "locationHint": "Port Syrio",
-    "name": "Braavos Bakery"
+    "name": "Braavos Bakery",
+    "ethnicity": "Italian"
   },
   {
     "id": "94fa54ab-72c2-40c7-85ee-491f2c9d023e",
@@ -55,7 +56,8 @@
     "city": "Westerland",
     "streetAddress": "1 Lannister Lane",
     "locationHint": "Lannisport",
-    "name": "Casterly Rock Coffee"
+    "name": "Casterly Rock Coffee",
+    "ethnicity": "American"
   },
   {
     "id": "affad0c3-172e-496c-9697-665d48bb18f8",
@@ -84,7 +86,8 @@
     "city": "Speardon",
     "streetAddress": "10 Blackmont Hill",
     "locationHint": "South of Prince's Park",
-    "name": "Dorne Donuts"
+    "name": "Dorne Donuts",
+    "ethnicity": "American"
   },
   {
     "id": "d9064e62-df2e-4d16-ba26-bddc06a9c4a2",
@@ -113,6 +116,7 @@
     "city": "Oldtown",
     "streetAddress": "77 Sept Terrace",
     "locationHint": "Best Sweets in Hightower",
-    "name": "Sept Sweets"
+    "name": "Sept Sweets",
+    "ethnicity": "French"
   }
 ]

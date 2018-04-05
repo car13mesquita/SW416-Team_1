@@ -16,7 +16,7 @@ namespace MyShop
         public string Friday { get { return string.Format("{0} - {1}", Store.FridayOpen, Store.FridayClose); } }
         public string Saturday { get { return string.Format("{0} - {1}", Store.SaturdayOpen, Store.SaturdayClose); } }
         public string Sunday { get { return string.Format("{0} - {1}", Store.SundayOpen, Store.SundayClose); } }
-
+        public string Ethnicity { get { return Store.Ethnicity; } }
 
         public string Address1 { get { return Store.StreetAddress; } }
         public string Address2 { get { return string.Format("{0}, {1} {2}", Store.City, Store.State, Store.ZipCode); } }

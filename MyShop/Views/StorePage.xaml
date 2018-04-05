@@ -51,7 +51,7 @@
 					Grid.Row="1"
 					Grid.ColumnSpan="3" 
 					FontSize="Small"
-					Text="{Binding Store.LocationHint}"
+					Text="{Binding Store.Ethnicity}"
 					HorizontalOptions="Center"/>
 				<Button 
 					x:Name="ButtonFindStore"
