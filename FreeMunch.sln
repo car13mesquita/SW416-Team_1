@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyShop", "MyShop\MyShop.csproj", "{B9A7FA37-E8D6-480B-AB8C-878C33E2D300}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeMunch", "MyShop\FreeMunch.csproj", "{B9A7FA37-E8D6-480B-AB8C-878C33E2D300}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShop.iOS", "MyShop.iOS\MyShop.iOS.csproj", "{922B72BE-8B10-4B52-8D48-881853B15028}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeMunch.iOS", "MyShop.iOS\FreeMunch.iOS.csproj", "{922B72BE-8B10-4B52-8D48-881853B15028}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShop.Android", "MyShop.Android\MyShop.Android.csproj", "{1FBB5AB6-8432-4478-BF33-EB1E26F20945}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeMunch.Android", "MyShop.Android\FreeMunch.Android.csproj", "{1FBB5AB6-8432-4478-BF33-EB1E26F20945}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

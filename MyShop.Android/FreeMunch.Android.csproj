@@ -253,9 +253,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyShop\MyShop.csproj">
+    <ProjectReference Include="..\MyShop\FreeMunch.csproj">
       <Project>{B9A7FA37-E8D6-480B-AB8C-878C33E2D300}</Project>
-      <Name>MyShop</Name>
+      <Name>FreeMunch</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -308,7 +308,7 @@
     <AndroidResource Include="Resources\drawable-xhdpi\hero.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
- <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
