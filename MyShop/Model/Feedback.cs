@@ -4,7 +4,7 @@ using static System.DateTime;
 
 namespace MyShop
 {
-    public class Feedback
+    public class Review
     {
         [JsonProperty(PropertyName = "id")]
         public string Id { get; set; }
@@ -15,7 +15,7 @@ namespace MyShop
 
 
         public string Text { get; set; } = string.Empty;
-        public DateTime FeedbackDate { get; set; } = UtcNow;
+        public DateTime ReviewDate { get; set; } = UtcNow;
         public DateTime VisitDate { get; set; } = UtcNow;
         public int Rating { get; set; } = 9;
         public int ServiceType { get; set; } = 4;
@@ -25,7 +25,7 @@ namespace MyShop
         public string StoreName { get; set; } = string.Empty;
 
         [JsonIgnore]
-        public string VisitDateDisplay => FeedbackDate.ToString("g");
+        public string VisitDateDisplay => ReviewDate.ToString("g");
 
         public override string ToString() =>
                 $"{nameof(Name)}: {Name} " +
@@ -38,7 +38,7 @@ namespace MyShop
 
 
         [JsonIgnore]
-        public string SortBy => FeedbackDate.ToString("MMMM yyyy");
+        public string SortBy => ReviewDate.ToString("MMMM yyyy");
     }
 }
 

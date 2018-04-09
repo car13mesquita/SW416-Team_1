@@ -22,8 +22,8 @@ namespace MyShop
 
         #region Setting Constants
 
-        private const string NeedSyncFeedbackKey = "need_sync_feedback";
-        private static readonly bool NeedSyncFeedbackDefault = false;
+        private const string NeedSyncReviewKey = "need_sync_review";
+        private static readonly bool NeedSyncReviewDefault = false;
 
         private const string LastSyncKey = "last_sync";
         private static readonly DateTime LastSyncDefault = DateTime.Now.AddDays(-30);
@@ -57,15 +57,15 @@ namespace MyShop
             }
         }
 
-        public static bool NeedSyncFeedback
+        public static bool NeedSyncReview
         {
             get
             {
-                return AppSettings.GetValueOrDefault(NeedSyncFeedbackKey, NeedSyncFeedbackDefault);
+                return AppSettings.GetValueOrDefault(NeedSyncReviewKey, NeedSyncReviewDefault);
             }
             set
             {
-                AppSettings.AddOrUpdateValue(NeedSyncFeedbackKey, value);
+                AppSettings.AddOrUpdateValue(NeedSyncReviewKey, value);
             }
         }
 

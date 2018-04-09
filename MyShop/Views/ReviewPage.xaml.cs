@@ -5,13 +5,13 @@ using Xamarin.Forms;
 
 namespace MyShop
 {
-    public partial class FeedbackPage : ContentPage
+    public partial class ReviewPage : ContentPage
     {
-        FeedbackViewModel viewModel;
-        public FeedbackPage()
+        ReviewViewModel viewModel;
+        public ReviewPage()
         {
             InitializeComponent();
-            BindingContext = viewModel = new FeedbackViewModel(this);
+            BindingContext = viewModel = new ReviewViewModel(this);
 
 
             PickerRating.SelectedIndex = 10;
@@ -40,7 +40,7 @@ namespace MyShop
                 showAlert = true;
             }
             if (showAlert)
-                await DisplayAlert("Uh oh :(", "Unable to get locations, don't worry you can still submit feedback.", "OK");
+                await DisplayAlert("Uh oh :(", "Unable to get locations, don't worry you can still submit review.", "OK");
 
 
         }

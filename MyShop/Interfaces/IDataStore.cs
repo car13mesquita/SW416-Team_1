@@ -11,11 +11,11 @@ namespace MyShop
         Task<Store> AddStoreAsync(Store store);
         Task<bool> RemoveStoreAsync(Store store);
         Task<Store> UpdateStoreAsync(Store store);
-        Task<Feedback> AddFeedbackAsync(Feedback feedback);
-        Task<IEnumerable<Feedback>> GetFeedbackAsync();
-        Task<bool> RemoveFeedbackAsync(Feedback feedback);
+        Task<Review> AddReviewAsync(Review review);
+        Task<IEnumerable<Review>> GetReviewAsync();
+        Task<bool> RemoveReviewAsync(Review review);
         Task SyncStoresAsync();
-        Task SyncFeedbacksAsync();
+        Task SyncReviewsAsync();
     }
 }
 

@@ -9,10 +9,10 @@ namespace MyShop
     {
 	static bool UseDesignTime => false;
 
-        static FeedbackViewModel feedbackVM;
+        static ReviewViewModel reviewVM;
 
-        public static FeedbackViewModel FeedbackViewModel
-        => feedbackVM ?? (feedbackVM = new FeedbackViewModel(null));
+        public static ReviewViewModel ReviewViewModel
+        => reviewVM ?? (reviewVM = new ReviewViewModel(null));
 
 
         static StoresViewModel storesViewModel;

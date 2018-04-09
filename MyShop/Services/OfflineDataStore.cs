@@ -20,15 +20,15 @@ namespace MyShop.Services
             return await Task.Run(() => JsonConvert.DeserializeObject<List<Store>>(json));
         }
 
-        public async Task<Feedback> AddFeedbackAsync(Feedback feedback)
+        public async Task<Review> AddReviewAsync(Review review)
         {
             var emailTask = CrossMessaging.Current.EmailMessenger;
             if (emailTask.CanSendEmail)
             {
-                emailTask.SendEmail("", "My Shop Feedback", feedback.ToString());
+                emailTask.SendEmail("", "My Shop Review", review.ToString());
             }
 
-            return await Task.Run(() => { return feedback; });
+            return await Task.Run(() => { return review; });
         }
 
         public Task<Store> AddStoreAsync(Store store)
@@ -36,9 +36,9 @@ namespace MyShop.Services
             return Task.FromResult(store);
         }
 
-        public async Task<IEnumerable<Feedback>> GetFeedbackAsync()
+        public async Task<IEnumerable<Review>> GetReviewAsync()
         {
-            return await Task.Run(() => { return new List<Feedback>(); });
+            return await Task.Run(() => { return new List<Review>(); });
         }
 
 
@@ -47,7 +47,7 @@ namespace MyShop.Services
             return Task.Run(() => { });
         }
 
-        public Task<bool> RemoveFeedbackAsync(Feedback feedback)
+        public Task<bool> RemoveReviewAsync(Review review)
         {
             return Task.FromResult(true);
         }
@@ -57,7 +57,7 @@ namespace MyShop.Services
             return Task.FromResult(true);
         }
 
-        public Task SyncFeedbacksAsync()
+        public Task SyncReviewsAsync()
         {
             return Task.Run(() => { });
         }

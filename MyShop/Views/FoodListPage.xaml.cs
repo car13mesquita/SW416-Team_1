@@ -11,7 +11,9 @@ namespace MyShop
 		{
 			InitializeComponent();
             BindingContext = new FoodListViewModel(this);
-		}
+            ButtonAmerican.Clicked += async (sender, e) => await Navigation.PushAsync(new StoresPage());
+
+        }
 
         SelectMultipleBasePage<CheckItem> multiPage;
         async void OnClick(object sender, EventArgs ea)

@@ -13,6 +13,7 @@ namespace MyShop
         public ObservableRangeCollection<Store> Stores { get; set; }
         public ObservableRangeCollection<Grouping<string, Store>> StoresGrouped { get; set; }
         public bool ForceSync { get; set; }
+
         public StoresViewModel(Page page) : base(page)
         {
             Title = "Saved Locations";
@@ -21,6 +22,7 @@ namespace MyShop
             StoresGrouped = new ObservableRangeCollection<Grouping<string, Store>>();
            
         }
+
         public Action<Store> ItemSelected { get; set; }
 
         Store selectedStore;
@@ -140,7 +142,7 @@ namespace MyShop
             StoresGrouped.Clear();
             var sorted = from store in Stores
                          orderby store.Country, store.City
-                         group store by store.Country into storeGroup
+                         group store by store.Ethnicity into storeGroup
                          select new Grouping<string, Store>(storeGroup.Key, storeGroup);
 
             StoresGrouped.ReplaceRange(sorted);

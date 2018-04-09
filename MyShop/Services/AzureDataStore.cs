@@ -21,7 +21,7 @@ namespace MyShop
         public MobileServiceClient MobileService { get; set; }
 
         IMobileServiceSyncTable<Store> storeTable;
-        IMobileServiceSyncTable<Feedback> feedbackTable;
+        IMobileServiceSyncTable<Review> reviewTable;
         bool initialized = false;
 
         public AzureDataStore()
@@ -38,43 +38,43 @@ namespace MyShop
             const string path = "syncstore.db";
             var store = new MobileServiceSQLiteStore(path);
             store.DefineTable<Store>();
-            store.DefineTable<Feedback>();
+            store.DefineTable<Review>();
             await MobileService.SyncContext.InitializeAsync(store, new MobileServiceSyncHandler());
 
             storeTable = MobileService.GetSyncTable<Store>();
-            feedbackTable = MobileService.GetSyncTable<Feedback>();
+            reviewTable = MobileService.GetSyncTable<Review>();
         }
 
 
-        public async Task<Feedback> AddFeedbackAsync(Feedback feedback)
+        public async Task<Review> AddReviewAsync(Review review)
         {
             if (!initialized)
                 await Init();
 
 
-            await feedbackTable.InsertAsync(feedback);
-            await SyncFeedbacksAsync();
-            return feedback;
+            await reviewTable.InsertAsync(review);
+            await SyncReviewsAsync();
+            return review;
         }
 
-        public async Task<IEnumerable<Feedback>> GetFeedbackAsync()
+        public async Task<IEnumerable<Review>> GetReviewAsync()
         {
 
             if (!initialized)
                 await Init();
 
-            await feedbackTable.PullAsync("allFeedbacks", feedbackTable.CreateQuery());
+            await reviewTable.PullAsync("allReviews", reviewTable.CreateQuery());
 
-            return await feedbackTable.ToEnumerableAsync();
+            return await reviewTable.ToEnumerableAsync();
         }
 
-        public async Task<bool> RemoveFeedbackAsync(Feedback feedback)
+        public async Task<bool> RemoveReviewAsync(Review review)
         {
             if (!initialized)
                 await Init();
 
-            await feedbackTable.DeleteAsync(feedback);
-            await SyncFeedbacksAsync();
+            await reviewTable.DeleteAsync(review);
+            await SyncReviewsAsync();
             return true;
         }
 
@@ -135,17 +135,17 @@ namespace MyShop
             }
         }
 
-        public async Task SyncFeedbacksAsync()
+        public async Task SyncReviewsAsync()
         {
             try
             {
-                Settings.NeedSyncFeedback = true;
+                Settings.NeedSyncReview = true;
                 if (!CrossConnectivity.Current.IsConnected)
                     return;
 
 
                 await MobileService.SyncContext.PushAsync();
-                Settings.NeedSyncFeedback = false;
+                Settings.NeedSyncReview = false;
             }
             catch (Exception ex)
             {

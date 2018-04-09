@@ -1,7 +1,7 @@
 [
   {
     "id": "42d32dc3-d7bf-487b-901d-0e58584c1a7f",
-    "ethnicity": "Bakeries",
+    "restriction": "Bakeries",
     "country": "Westeros",
     "phoneNumber": "855-926-2746",
     "sundayClose": "6pm",
@@ -31,7 +31,7 @@
   },
   {
     "id": "94fa54ab-72c2-40c7-85ee-491f2c9d023e",
-    "ethnicity": "Coffee Shops",
+    "restriction": "Coffee Shops",
     "country": "Westerland",
     "phoneNumber": "855-926-2746",
     "sundayClose": "6pm",
@@ -61,7 +61,7 @@
   },
   {
     "id": "affad0c3-172e-496c-9697-665d48bb18f8",
-    "ethnicity": "Specialty Shop",
+    "restriction": "Specialty Shop",
     "country": "Seven Kingdoms",
     "phoneNumber": "855-926-2746",
     "sundayClose": "6pm",
@@ -91,7 +91,7 @@
   },
   {
     "id": "d9064e62-df2e-4d16-ba26-bddc06a9c4a2",
-    "ethnicity": "",
+    "restriction": "",
     "country": "Seven Kingdoms",
     "phoneNumber": "588-926-2746",
     "sundayClose": "6pm",

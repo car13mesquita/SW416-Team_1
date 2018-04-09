@@ -16,7 +16,7 @@ namespace MyShop
 
             ButtonReviewStore.Clicked += async (sender, e) =>
             {
-                await Navigation.PushAsync(new FeedbackPage());
+                await Navigation.PushAsync(new ReviewPage());
             };
 
         }

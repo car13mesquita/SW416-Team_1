@@ -38,6 +38,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\ReviewPage.xaml.cs">
+      <DependentUpon>ReviewPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\FoodListPage.xaml.cs">
       <DependentUpon>FoodListPage.xaml</DependentUpon>
     </Compile>

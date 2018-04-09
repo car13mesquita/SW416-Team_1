@@ -6,10 +6,10 @@ using static System.DateTime;
 
 namespace MyShop
 {
-    public class FeedbackViewModel : ViewModelBase
+    public class ReviewViewModel : ViewModelBase
     {
         IDataStore dataStore;
-        public FeedbackViewModel(Page page) : base(page)
+        public ReviewViewModel(Page page) : base(page)
         {
             dataStore = DependencyService.Get<IDataStore>();
             Title = "Leave Review";
@@ -38,17 +38,17 @@ namespace MyShop
             return new List<Store>();
         }
 
-        Command saveFeedbackCommand;
-        public Command SaveFeedbackCommand
+        Command saveReviewCommand;
+        public Command SaveReviewCommand
         {
             get
             {
-                return saveFeedbackCommand ??
-                    (saveFeedbackCommand = new Command(async () => await ExecuteSaveFeedbackCommand(), () => { return !IsBusy; }));
+                return saveReviewCommand ??
+                    (saveReviewCommand = new Command(async () => await ExecuteSaveReviewCommand(), () => { return !IsBusy; }));
             }
         }
 
-        async Task ExecuteSaveFeedbackCommand()
+        async Task ExecuteSaveReviewCommand()
         {
             if (IsBusy)
                 return;
@@ -61,14 +61,14 @@ namespace MyShop
 
             Message = "Submitting review...";
             IsBusy = true;
-            saveFeedbackCommand?.ChangeCanExecute();
+            saveReviewCommand?.ChangeCanExecute();
 
             try
             {
-                await dataStore.AddFeedbackAsync(new Feedback
+                await dataStore.AddReviewAsync(new Review
                 {
                     Text = this.Text,
-                    FeedbackDate = UtcNow,
+                    ReviewDate = UtcNow,
                     VisitDate = Date,
                     Rating = Rating,
                     ServiceType = ServiceType,
@@ -85,7 +85,7 @@ namespace MyShop
             finally
             {
                 IsBusy = false;
-                saveFeedbackCommand?.ChangeCanExecute();
+                saveReviewCommand?.ChangeCanExecute();
             }
 
             await page.Navigation.PopAsync();
