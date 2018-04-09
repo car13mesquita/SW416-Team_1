@@ -280,6 +280,7 @@
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\herot.jpg" />
     <AndroidResource Include="Resources\drawable\bowl.jpg" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
