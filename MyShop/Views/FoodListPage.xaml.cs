@@ -11,7 +11,19 @@ namespace MyShop
 		{
 			InitializeComponent();
             BindingContext = new FoodListViewModel(this);
-            ButtonAmerican.Clicked += async (sender, e) => await Navigation.PushAsync(new StoresPage());
+            ButtonAmerican.Clicked += OnButtonAmericanClicked;
+
+        }
+
+        async void OnButtonAmericanClicked (object sender, EventArgs e)
+        {
+            var SelectedEthnicity = "American";
+
+            var StoresPage = new StoresPage
+            {
+                BindingContext = SelectedEthnicity
+            };
+            await Navigation.PushAsync(StoresPage);
 
         }
 
