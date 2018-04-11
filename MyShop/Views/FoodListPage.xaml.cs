@@ -17,8 +17,8 @@ namespace MyShop
 
         async void OnButtonAmericanClicked (object sender, EventArgs e)
         {
-            var SelectedEthnicity = "American";
-
+           
+            
             var StoresPage = new StoresPage
             {
                 
@@ -30,6 +30,7 @@ namespace MyShop
         SelectMultipleBasePage<CheckItem> multiPage;
         async void OnClick(object sender, EventArgs ea)
         {
+            
             var items = new List<CheckItem>();
             items.Add(new CheckItem { Name = "Allergy - Dairy" });
             items.Add(new CheckItem { Name = "Allergy - Eggs" });

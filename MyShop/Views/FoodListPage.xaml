@@ -41,15 +41,19 @@
                         HorizontalOptions="Center"/>
                     <Button
                         FontSize="Medium"
+                        BorderWidth="2"
+                        BorderColor="#74CF9A"
                         Text="Select"
+                        TextColor="#63DAB6"
                         Grid.ColumnSpan="3"
                         HorizontalOptions="Center"
+                        WidthRequest="150"
                         Clicked="OnClick" />
                     <Label
                         Grid.ColumnSpan="3"
                         HorizontalOptions="Center"
                         x:Name="results" />
-                </StackLayout>
+                
                 
                 <Label 
                     FontSize="Medium"
@@ -59,71 +63,116 @@
                     HorizontalOptions="Center"/>
                 <Button
                     FontSize="Medium"
+                    BorderWidth="2"
+                    BorderColor="#74CF9A"
                     Text="American"
+                    TextColor="#63DAB6"
                     Grid.Row="3"
                     Grid.ColumnSpan="3"
                     HorizontalOptions="Center"
+                    WidthRequest="150"
                     x:Name="ButtonAmerican"/>
                 <Button
                     FontSize="Medium"
+                    BorderWidth="2"
+                    BorderColor="#74CF9A"
                     Text="Chinese"
+                    TextColor="#63DAB6"
                     Grid.Row="4"
                     Grid.ColumnSpan="3"
+                    WidthRequest="150"
                     HorizontalOptions="Center"/>
                 <Button
                     FontSize="Medium"
+                    BorderWidth="2"
+                    BorderColor="#74CF9A"
                     Text="French"
+                    TextColor="#63DAB6"
                     Grid.Row="5"
                     Grid.ColumnSpan="3"
+                    WidthRequest="150"
                     HorizontalOptions="Center"/>
                 <Button
                     FontSize="Medium"
+                    BorderWidth="2"
+                    BorderColor="#74CF9A"
                     Text="Greek"
+                    TextColor="#63DAB6"
                     Grid.Row="6"
                     Grid.ColumnSpan="3"
+                    WidthRequest="150"
                     HorizontalOptions="Center"/>
                 <Button
                     FontSize="Medium"
+                    BorderWidth="2"
+                    BorderColor="#74CF9A"
                     Text="Japanese"
+                    TextColor="#63DAB6"
                     Grid.Row="7"
                     Grid.ColumnSpan="3"
+                    WidthRequest="150"
                     HorizontalOptions="Center"/>
                 <Button
                     FontSize="Medium"
+                    BorderWidth="2"
+                    BorderColor="#74CF9A"
                     Text="Indian"
+                    TextColor="#63DAB6"
                     Grid.Row="8"
                     Grid.ColumnSpan="3"
+                    WidthRequest="150"
                     HorizontalOptions="Center"/>
                 <Button
                     FontSize="Medium"
+                    BorderWidth="2"
+                    BorderColor="#74CF9A"
                     Text="Italian"
+                    TextColor="#63DAB6"
                     Grid.Row="9"
                     Grid.ColumnSpan="3"
+                    WidthRequest="150"
                     HorizontalOptions="Center"/>
                 <Button
                     FontSize="Medium"
+                    BorderWidth="2"
+                    BorderColor="#74CF9A"
                     Text="Mediterranean"
+                    TextColor="#63DAB6"
                     Grid.Row="10"
                     Grid.ColumnSpan="3"
+                    WidthRequest="150"
                     HorizontalOptions="Center"/>
                 <Button
                     FontSize="Medium"
+                    BorderWidth="2"
+                    BorderColor="#74CF9A"
                     Text="Mexican"
+                    TextColor="#63DAB6"
                     Grid.Row="11"
                     Grid.ColumnSpan="3"
+                    WidthRequest="150"
                     HorizontalOptions="Center"/>
                 <Button
                     FontSize="Medium"
+                    BorderWidth="2"
+                    BorderColor="#74CF9A"
                     Text="Spanish"
+                    TextColor="#63DAB6"
                     Grid.Row="12"
                     Grid.ColumnSpan="3"
+                    WidthRequest="150"
                     HorizontalOptions="Center"/>
                 <Button
                     FontSize="Medium"
+                    BorderWidth="2"
+                    BorderColor="#74CF9A"
                     Text="Thai"
+                    TextColor="#63DAB6"
                     Grid.Row="13"
                     Grid.ColumnSpan="3"
+                    WidthRequest="150"
                     HorizontalOptions="Center"/>
+                  </StackLayout>
 
             </Grid>
         </ScrollView>
