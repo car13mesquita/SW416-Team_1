@@ -13,6 +13,7 @@ namespace MyShop
         public ObservableRangeCollection<Store> Stores { get; set; }
         public ObservableRangeCollection<Grouping<string, Store>> StoresGrouped { get; set; }
         public bool ForceSync { get; set; }
+        public string Ethnicity { get; set; }
 
         public StoresViewModel(Page page) : base(page)
         {
@@ -20,7 +21,7 @@ namespace MyShop
             dataStore = DependencyService.Get<IDataStore>();
             Stores = new ObservableRangeCollection<Store>();
             StoresGrouped = new ObservableRangeCollection<Grouping<string, Store>>();
-           
+            Ethnicity = null;
         }
 
         public Action<Store> ItemSelected { get; set; }
@@ -47,9 +48,6 @@ namespace MyShop
                 }
             }
         }
-
-
-
 
         private Command forceRefreshCommand;
         public Command ForceRefreshCommand
@@ -94,8 +92,14 @@ namespace MyShop
 
                 Stores.ReplaceRange(stores);
 
-
-                Sort(); /* I assume this command is the one we need to change? */
+                if (null != Ethnicity)
+                {
+                    SortByEthnicity();
+                }
+                else
+                {
+                    Sort(); /* I assume this command is the one we need to change? */   
+                }
             }
             catch (Exception ex)
             {
@@ -137,9 +141,8 @@ namespace MyShop
 
             StoresGrouped.Clear();
 
-            var ethn = "American";
             var sorted = from store in Stores
-                         where (store.Ethnicity == ethn)
+                    where (store.Ethnicity == Ethnicity)
                          orderby store.Country, store.City
                          group store by store.Ethnicity into storeGroup
                          select new Grouping<string, Store>(storeGroup.Key, storeGroup);

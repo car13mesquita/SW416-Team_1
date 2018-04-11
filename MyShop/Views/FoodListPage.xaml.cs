@@ -14,17 +14,22 @@ namespace MyShop
             ButtonAmerican.Clicked += OnButtonAmericanClicked;
 
         }
-
+        /**
+         * If you use the Text field of the button, provided it's not
+         * internationalized, then this can be a completely generic 
+         * OnEthnicityButtonClicked method, rather than being specific to
+         * the American cuisine.
+         */
         async void OnButtonAmericanClicked (object sender, EventArgs e)
         {
-           
-            
-            var StoresPage = new StoresPage
+            if (sender is Xamarin.Forms.Button)
             {
-                
-            };
-            await Navigation.PushAsync(new StoresPage());
+                var senderButton = (Xamarin.Forms.Button)sender;
 
+                var StoresPage = new StoresPage(senderButton.Text);
+
+                await Navigation.PushAsync(StoresPage);
+            }
         }
 
         SelectMultipleBasePage<CheckItem> multiPage;
