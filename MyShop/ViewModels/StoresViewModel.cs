@@ -49,29 +49,7 @@ namespace MyShop
         }
 
 
-        public async Task DeleteStore(Store store)
-        {
-            if (IsBusy)
-                return;
-            IsBusy = true;
-            try
-            {
-                await dataStore.RemoveStoreAsync(store);
-                Stores.Remove(store);
-                Sort();
-            }
-            catch (Exception ex)
-            {
-                await page.DisplayAlert("Uh Oh :(", $"Unable to remove {store?.Name ?? "Unknown"}, please try again: {ex.Message}", "OK");
-            }
-            finally
-            {
-                IsBusy = false;
-            }
 
-
-
-        }
 
         private Command forceRefreshCommand;
         public Command ForceRefreshCommand
@@ -117,7 +95,7 @@ namespace MyShop
                 Stores.ReplaceRange(stores);
 
 
-                Sort();
+                Sort(); /* I assume this command is the one we need to change? */
             }
             catch (Exception ex)
             {
@@ -136,14 +114,32 @@ namespace MyShop
 
         }
 
+        /* Sorts all the stores by ethincty alphabetically */
         private void Sort()
         {
 
             StoresGrouped.Clear();
 
-
             var sorted = from store in Stores
-                         where (store.Ethnicity == "American")
+                
+                         orderby store.Country, store.City
+                         group store by store.Ethnicity into storeGroup
+                         select new Grouping<string, Store>(storeGroup.Key, storeGroup);
+
+
+            StoresGrouped.ReplaceRange(sorted);
+        }
+
+
+        /* This is sorting by ethnicity. not sure how to pass it the value of the button pressed  */
+        private void SortByEthnicity()
+        {
+
+            StoresGrouped.Clear();
+
+            var ethn = "American";
+            var sorted = from store in Stores
+                         where (store.Ethnicity == ethn)
                          orderby store.Country, store.City
                          group store by store.Ethnicity into storeGroup
                          select new Grouping<string, Store>(storeGroup.Key, storeGroup);
