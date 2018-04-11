@@ -140,10 +140,14 @@ namespace MyShop
         {
 
             StoresGrouped.Clear();
+
+
             var sorted = from store in Stores
+                         where (store.Ethnicity == "American")
                          orderby store.Country, store.City
                          group store by store.Ethnicity into storeGroup
                          select new Grouping<string, Store>(storeGroup.Key, storeGroup);
+
 
             StoresGrouped.ReplaceRange(sorted);
         }

@@ -21,9 +21,9 @@ namespace MyShop
 
             var StoresPage = new StoresPage
             {
-                BindingContext = SelectedEthnicity
+                
             };
-            await Navigation.PushAsync(StoresPage);
+            await Navigation.PushAsync(new StoresPage());
 
         }
 
