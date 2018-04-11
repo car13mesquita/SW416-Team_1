@@ -73,7 +73,6 @@
                                              VerticalOptions="Center">
                                     <Label Text="{Binding Name}" FontSize="Medium"  TextColor="#63DAB6" LineBreakMode="NoWrap"/>
                                     <Label Text="{Binding LocationHint}" FontSize="Small" LineBreakMode="WordWrap"/>
-                                    <Label Text="{Binding Ethnicity}" FontSize="Small" LineBreakMode="WordWrap"/>
                                 </StackLayout>
                             </Grid>
                         </ViewCell>
