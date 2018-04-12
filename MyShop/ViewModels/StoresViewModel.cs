@@ -94,11 +94,11 @@ namespace MyShop
 
                 if (null != Ethnicity)
                 {
-                    SortByEthnicity();
+                    FilterByEthnicity();
                 }
                 else
                 {
-                    Sort(); /* I assume this command is the one we need to change? */   
+                    Filter(); /* I assume this command is the one we need to change? */   
                 }
             }
             catch (Exception ex)
@@ -119,7 +119,7 @@ namespace MyShop
         }
 
         /* Sorts all the stores by ethincty alphabetically */
-        private void Sort()
+        private void Filter()
         {
 
             StoresGrouped.Clear();
@@ -136,7 +136,7 @@ namespace MyShop
 
 
         /* This is sorting by ethnicity. not sure how to pass it the value of the button pressed  */
-        private void SortByEthnicity()
+        private void FilterByEthnicity()
         {
 
             StoresGrouped.Clear();
