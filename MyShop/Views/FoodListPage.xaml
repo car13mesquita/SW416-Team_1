@@ -70,7 +70,7 @@
                     Grid.Row="3"
                     Grid.ColumnSpan="3"
                     HorizontalOptions="Center"
-                    WidthRequest="150"
+                    WidthRequest="180"
                     x:Name="ButtonAmerican"/>
                 <Button
                     FontSize="Medium"
@@ -80,8 +80,9 @@
                     TextColor="#63DAB6"
                     Grid.Row="4"
                     Grid.ColumnSpan="3"
-                    WidthRequest="150"
-                    HorizontalOptions="Center"/>
+                    WidthRequest="180"
+                    HorizontalOptions="Center"
+                    x:Name="ButtonChineese"/>
                 <Button
                     FontSize="Medium"
                     BorderWidth="2"
@@ -90,8 +91,9 @@
                     TextColor="#63DAB6"
                     Grid.Row="5"
                     Grid.ColumnSpan="3"
-                    WidthRequest="150"
-                    HorizontalOptions="Center"/>
+                    WidthRequest="180"
+                    HorizontalOptions="Center"
+                    x:Name="ButtonFrench"/>
                 <Button
                     FontSize="Medium"
                     BorderWidth="2"
@@ -100,8 +102,9 @@
                     TextColor="#63DAB6"
                     Grid.Row="6"
                     Grid.ColumnSpan="3"
-                    WidthRequest="150"
-                    HorizontalOptions="Center"/>
+                    WidthRequest="180"
+                    HorizontalOptions="Center"
+                    x:Name="ButtonGreek"/>
                 <Button
                     FontSize="Medium"
                     BorderWidth="2"
@@ -110,8 +113,9 @@
                     TextColor="#63DAB6"
                     Grid.Row="7"
                     Grid.ColumnSpan="3"
-                    WidthRequest="150"
-                    HorizontalOptions="Center"/>
+                    WidthRequest="180"
+                    HorizontalOptions="Center"
+                    x:Name="ButtonJapanese"/>
                 <Button
                     FontSize="Medium"
                     BorderWidth="2"
@@ -120,8 +124,9 @@
                     TextColor="#63DAB6"
                     Grid.Row="8"
                     Grid.ColumnSpan="3"
-                    WidthRequest="150"
-                    HorizontalOptions="Center"/>
+                    WidthRequest="180"
+                    HorizontalOptions="Center"
+                    x:Name="ButtonIndian"/>
                 <Button
                     FontSize="Medium"
                     BorderWidth="2"
@@ -130,8 +135,9 @@
                     TextColor="#63DAB6"
                     Grid.Row="9"
                     Grid.ColumnSpan="3"
-                    WidthRequest="150"
-                    HorizontalOptions="Center"/>
+                    WidthRequest="180"
+                    HorizontalOptions="Center"
+                    x:Name="ButtonItalian"/>
                 <Button
                     FontSize="Medium"
                     BorderWidth="2"
@@ -140,8 +146,9 @@
                     TextColor="#63DAB6"
                     Grid.Row="10"
                     Grid.ColumnSpan="3"
-                    WidthRequest="150"
-                    HorizontalOptions="Center"/>
+                    WidthRequest="180"
+                    HorizontalOptions="Center"
+                    x:Name="ButtonMediterranean"/>
                 <Button
                     FontSize="Medium"
                     BorderWidth="2"
@@ -150,8 +157,9 @@
                     TextColor="#63DAB6"
                     Grid.Row="11"
                     Grid.ColumnSpan="3"
-                    WidthRequest="150"
-                    HorizontalOptions="Center"/>
+                    WidthRequest="180"
+                    HorizontalOptions="Center"
+                    x:Name="ButtonMexican"/>
                 <Button
                     FontSize="Medium"
                     BorderWidth="2"
@@ -160,8 +168,9 @@
                     TextColor="#63DAB6"
                     Grid.Row="12"
                     Grid.ColumnSpan="3"
-                    WidthRequest="150"
-                    HorizontalOptions="Center"/>
+                    WidthRequest="180"
+                    HorizontalOptions="Center"
+                    x:Name="ButtonSpanish"/>
                 <Button
                     FontSize="Medium"
                     BorderWidth="2"
@@ -170,8 +179,9 @@
                     TextColor="#63DAB6"
                     Grid.Row="13"
                     Grid.ColumnSpan="3"
-                    WidthRequest="150"
-                    HorizontalOptions="Center"/>
+                    WidthRequest="180"
+                    HorizontalOptions="Center"
+                    x:Name="ButtonThai"/>
                   </StackLayout>
 
             </Grid>

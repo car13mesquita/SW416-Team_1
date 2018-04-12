@@ -16,7 +16,7 @@ namespace MyShop.Views.Tablet
 
             this.MasterBehavior = MasterBehavior.Default;
 
-            Master = new StoresPage();
+            Master = new StoresPage(null);
 
             Detail = new ContentPage
             {
