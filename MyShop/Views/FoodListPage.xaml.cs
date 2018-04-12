@@ -12,6 +12,18 @@ namespace MyShop
 			InitializeComponent();
             BindingContext = new FoodListViewModel(this);
             ButtonAmerican.Clicked += OnButtonAmericanClicked;
+            ButtonChineese.Clicked += OnButtonChineeseClicked;
+            ButtonFrench.Clicked += OnButtonFrenchClicked;
+            ButtonGreek.Clicked += OnButtonGreekClicked;
+            ButtonJapanese.Clicked += OnButtonJapaneseClicked;
+            ButtonIndian.Clicked += OnButtonIndianClicked;
+            ButtonItalian.Clicked += OnButtonItalianClicked;
+            ButtonMediterranean.Clicked += OnButtonMediterraneanClicked;
+            ButtonMexican.Clicked += OnButtonMexicanClicked;
+            ButtonSpanish.Clicked += OnButtonSpanishClicked;
+            ButtonThai.Clicked += OnButtonThaiClicked;
+           
+
 
         }
         /**
@@ -20,6 +32,8 @@ namespace MyShop
          * OnEthnicityButtonClicked method, rather than being specific to
          * the American cuisine.
          */
+
+
         async void OnButtonAmericanClicked (object sender, EventArgs e)
         {
             if (sender is Xamarin.Forms.Button)
@@ -31,6 +45,136 @@ namespace MyShop
                 await Navigation.PushAsync(StoresPage);
             }
         }
+
+        async void OnButtonChineeseClicked(object sender, EventArgs e)
+        {
+            if (sender is Xamarin.Forms.Button)
+            {
+                var senderButton = (Xamarin.Forms.Button)sender;
+
+                var StoresPage = new StoresPage(senderButton.Text);
+
+                await Navigation.PushAsync(StoresPage);
+            }
+        }
+
+
+        async void OnButtonFrenchClicked(object sender, EventArgs e)
+        {
+            if (sender is Xamarin.Forms.Button)
+            {
+                var senderButton = (Xamarin.Forms.Button)sender;
+
+                var StoresPage = new StoresPage(senderButton.Text);
+
+                await Navigation.PushAsync(StoresPage);
+            }
+        }
+
+
+        async void OnButtonGreekClicked(object sender, EventArgs e)
+        {
+            if (sender is Xamarin.Forms.Button)
+            {
+                var senderButton = (Xamarin.Forms.Button)sender;
+
+                var StoresPage = new StoresPage(senderButton.Text);
+
+                await Navigation.PushAsync(StoresPage);
+            }
+        }
+
+
+
+        async void OnButtonJapaneseClicked(object sender, EventArgs e)
+        {
+            if (sender is Xamarin.Forms.Button)
+            {
+                var senderButton = (Xamarin.Forms.Button)sender;
+
+                var StoresPage = new StoresPage(senderButton.Text);
+
+                await Navigation.PushAsync(StoresPage);
+            }
+        }
+
+
+        async void OnButtonIndianClicked(object sender, EventArgs e)
+        {
+            if (sender is Xamarin.Forms.Button)
+            {
+                var senderButton = (Xamarin.Forms.Button)sender;
+
+                var StoresPage = new StoresPage(senderButton.Text);
+
+                await Navigation.PushAsync(StoresPage);
+            }
+        }
+
+
+        async void OnButtonItalianClicked(object sender, EventArgs e)
+        {
+            if (sender is Xamarin.Forms.Button)
+            {
+                var senderButton = (Xamarin.Forms.Button)sender;
+
+                var StoresPage = new StoresPage(senderButton.Text);
+
+                await Navigation.PushAsync(StoresPage);
+            }
+        }
+
+
+        async void OnButtonMediterraneanClicked(object sender, EventArgs e)
+        {
+            if (sender is Xamarin.Forms.Button)
+            {
+                var senderButton = (Xamarin.Forms.Button)sender;
+
+                var StoresPage = new StoresPage(senderButton.Text);
+
+                await Navigation.PushAsync(StoresPage);
+            }
+        }
+
+
+        async void OnButtonMexicanClicked(object sender, EventArgs e)
+        {
+            if (sender is Xamarin.Forms.Button)
+            {
+                var senderButton = (Xamarin.Forms.Button)sender;
+
+                var StoresPage = new StoresPage(senderButton.Text);
+
+                await Navigation.PushAsync(StoresPage);
+            }
+        }
+
+        async void OnButtonSpanishClicked(object sender, EventArgs e)
+        {
+            if (sender is Xamarin.Forms.Button)
+            {
+                var senderButton = (Xamarin.Forms.Button)sender;
+
+                var StoresPage = new StoresPage(senderButton.Text);
+
+                await Navigation.PushAsync(StoresPage);
+            }
+        }
+
+        async void OnButtonThaiClicked(object sender, EventArgs e)
+        {
+            if (sender is Xamarin.Forms.Button)
+            {
+                var senderButton = (Xamarin.Forms.Button)sender;
+
+                var StoresPage = new StoresPage(senderButton.Text);
+
+                await Navigation.PushAsync(StoresPage);
+            }
+        }
+
+
 
         SelectMultipleBasePage<CheckItem> multiPage;
         async void OnClick(object sender, EventArgs ea)
