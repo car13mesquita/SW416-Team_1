@@ -1,52 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace MyShop
 {
 	public partial class FoodListPage : ContentPage
 	{
-        List<string> Ethnicities;
 		public FoodListPage ()
 		{
 			InitializeComponent();
             BindingContext = new FoodListViewModel(this);
-            //ButtonAmerican.Clicked += OnButtonClicked;
-            //ButtonChineese.Clicked += OnButtonClicked;
-            //ButtonFrench.Clicked += OnButtonClicked;
-            //ButtonGreek.Clicked += OnButtonClicked;
-            //ButtonJapanese.Clicked += OnButtonClicked;
-            //ButtonIndian.Clicked += OnButtonClicked;
-            //ButtonItalian.Clicked += OnButtonClicked;
-            //ButtonMediterranean.Clicked += OnButtonClicked;
-            //ButtonMexican.Clicked += OnButtonClicked;
-            //ButtonSpanish.Clicked += OnButtonClicked;
-            //ButtonThai.Clicked += OnButtonClicked;
 
-            Ethnicities = new List<string>(new string[] {
-                "American",
-                "Chinese",
-                "French",
-                "Greek",
-                "Japanese",
-                "Indian",
-                "Italian",
-                "Mediterraean",
-                "Mexican",
-                "Spanish",
-                "Thai"
-            });
+            var makeButtonCommand = new Command(async () => { await AddButtons(); });
+            makeButtonCommand.Execute(null);
+        }
 
+        private void AddButtonsWithEthnicities(List<string> ethnicities)
+        {
             StackLayout stackLayout = this.FindByName<StackLayout>("AllergiesAndEthnicities");
-            foreach (var ethnicity in Ethnicities)
+            foreach (var ethnicity in ethnicities)
             {
                 Button newButton = new Button()
                 {
                     BorderWidth = 2,
                     BorderColor = Color.Black,
-                    Text= ethnicity,
-                    TextColor= Color.Red,
+                    Text = ethnicity,
+                    TextColor = Color.Red,
                 };
 
                 newButton.Clicked += OnButtonClicked;
@@ -54,14 +34,26 @@ namespace MyShop
                 stackLayout.Children.Add(newButton);
             }
         }
-        /*
-         * If you use the Text field of the button, provided it's not
-         * internationalized, then this can be a completely generic 
-         * OnEthnicityButtonClicked method, rather than being specific to
-         * the American cuisine.
-         */
 
+        async Task<bool> AddButtons()
+        {
+            var stores = await DependencyService.Get<IDataStore>().GetStoresAsync();
+            List<string> ethnicities = new List<string>();
 
+            foreach (var oneStore in stores)
+            {
+                if (!ethnicities.Contains(oneStore.Ethnicity))
+                {
+                    ethnicities.Add(oneStore.Ethnicity);   
+                }
+            }
+
+            ethnicities.Sort();
+
+            AddButtonsWithEthnicities(ethnicities);
+
+            return true;
+        }
 
         async void OnButtonClicked(object sender, EventArgs e)
         {
