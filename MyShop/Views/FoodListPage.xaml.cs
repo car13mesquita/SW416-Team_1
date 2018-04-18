@@ -7,23 +7,52 @@ namespace MyShop
 {
 	public partial class FoodListPage : ContentPage
 	{
+        List<string> Ethnicities;
 		public FoodListPage ()
 		{
 			InitializeComponent();
             BindingContext = new FoodListViewModel(this);
-            ButtonAmerican.Clicked += OnButtonClicked;
-            ButtonChineese.Clicked += OnButtonClicked;
-            ButtonFrench.Clicked += OnButtonClicked;
-            ButtonGreek.Clicked += OnButtonClicked;
-            ButtonJapanese.Clicked += OnButtonClicked;
-            ButtonIndian.Clicked += OnButtonClicked;
-            ButtonItalian.Clicked += OnButtonClicked;
-            ButtonMediterranean.Clicked += OnButtonClicked;
-            ButtonMexican.Clicked += OnButtonClicked;
-            ButtonSpanish.Clicked += OnButtonClicked;
-            ButtonThai.Clicked += OnButtonClicked;
+            //ButtonAmerican.Clicked += OnButtonClicked;
+            //ButtonChineese.Clicked += OnButtonClicked;
+            //ButtonFrench.Clicked += OnButtonClicked;
+            //ButtonGreek.Clicked += OnButtonClicked;
+            //ButtonJapanese.Clicked += OnButtonClicked;
+            //ButtonIndian.Clicked += OnButtonClicked;
+            //ButtonItalian.Clicked += OnButtonClicked;
+            //ButtonMediterranean.Clicked += OnButtonClicked;
+            //ButtonMexican.Clicked += OnButtonClicked;
+            //ButtonSpanish.Clicked += OnButtonClicked;
+            //ButtonThai.Clicked += OnButtonClicked;
 
+            Ethnicities = new List<string>(new string[] {
+                "American",
+                "Chinese",
+                "French",
+                "Greek",
+                "Japanese",
+                "Indian",
+                "Italian",
+                "Mediterraean",
+                "Mexican",
+                "Spanish",
+                "Thai"
+            });
 
+            StackLayout stackLayout = this.FindByName<StackLayout>("AllergiesAndEthnicities");
+            foreach (var ethnicity in Ethnicities)
+            {
+                Button newButton = new Button()
+                {
+                    BorderWidth = 2,
+                    BorderColor = Color.Black,
+                    Text= ethnicity,
+                    TextColor= Color.Red,
+                };
+
+                newButton.Clicked += OnButtonClicked;
+
+                stackLayout.Children.Add(newButton);
+            }
         }
         /*
          * If you use the Text field of the button, provided it's not
