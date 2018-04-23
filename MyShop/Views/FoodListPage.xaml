@@ -33,7 +33,8 @@
                 <StackLayout
                     Grid.Row="1"
                     Grid.ColumnSpan="3"
-                    HorizontalOptions="Center">
+                    HorizontalOptions="Center"
+                    x:Name="AllergiesAndEthnicities">
                     <Label 
                         FontSize="Medium"
                         Text="Allergies"
@@ -52,136 +53,13 @@
                     <Label
                         Grid.ColumnSpan="3"
                         HorizontalOptions="Center"
-                        x:Name="results" />
-                
-                
+                        x:Name="results" />                               
                 <Label 
                     FontSize="Medium"
                     Text="Ethnicities"
                     Grid.Row="2"
                     Grid.ColumnSpan="3"
                     HorizontalOptions="Center"/>
-                <Button
-                    FontSize="Medium"
-                    BorderWidth="2"
-                    BorderColor="#74CF9A"
-                    Text="American"
-                    TextColor="#63DAB6"
-                    Grid.Row="3"
-                    Grid.ColumnSpan="3"
-                    HorizontalOptions="Center"
-                    WidthRequest="180"
-                    x:Name="ButtonAmerican"/>
-                <Button
-                    FontSize="Medium"
-                    BorderWidth="2"
-                    BorderColor="#74CF9A"
-                    Text="Chinese"
-                    TextColor="#63DAB6"
-                    Grid.Row="4"
-                    Grid.ColumnSpan="3"
-                    WidthRequest="180"
-                    HorizontalOptions="Center"
-                    x:Name="ButtonChineese"/>
-                <Button
-                    FontSize="Medium"
-                    BorderWidth="2"
-                    BorderColor="#74CF9A"
-                    Text="French"
-                    TextColor="#63DAB6"
-                    Grid.Row="5"
-                    Grid.ColumnSpan="3"
-                    WidthRequest="180"
-                    HorizontalOptions="Center"
-                    x:Name="ButtonFrench"/>
-                <Button
-                    FontSize="Medium"
-                    BorderWidth="2"
-                    BorderColor="#74CF9A"
-                    Text="Greek"
-                    TextColor="#63DAB6"
-                    Grid.Row="6"
-                    Grid.ColumnSpan="3"
-                    WidthRequest="180"
-                    HorizontalOptions="Center"
-                    x:Name="ButtonGreek"/>
-                <Button
-                    FontSize="Medium"
-                    BorderWidth="2"
-                    BorderColor="#74CF9A"
-                    Text="Japanese"
-                    TextColor="#63DAB6"
-                    Grid.Row="7"
-                    Grid.ColumnSpan="3"
-                    WidthRequest="180"
-                    HorizontalOptions="Center"
-                    x:Name="ButtonJapanese"/>
-                <Button
-                    FontSize="Medium"
-                    BorderWidth="2"
-                    BorderColor="#74CF9A"
-                    Text="Indian"
-                    TextColor="#63DAB6"
-                    Grid.Row="8"
-                    Grid.ColumnSpan="3"
-                    WidthRequest="180"
-                    HorizontalOptions="Center"
-                    x:Name="ButtonIndian"/>
-                <Button
-                    FontSize="Medium"
-                    BorderWidth="2"
-                    BorderColor="#74CF9A"
-                    Text="Italian"
-                    TextColor="#63DAB6"
-                    Grid.Row="9"
-                    Grid.ColumnSpan="3"
-                    WidthRequest="180"
-                    HorizontalOptions="Center"
-                    x:Name="ButtonItalian"/>
-                <Button
-                    FontSize="Medium"
-                    BorderWidth="2"
-                    BorderColor="#74CF9A"
-                    Text="Mediterranean"
-                    TextColor="#63DAB6"
-                    Grid.Row="10"
-                    Grid.ColumnSpan="3"
-                    WidthRequest="180"
-                    HorizontalOptions="Center"
-                    x:Name="ButtonMediterranean"/>
-                <Button
-                    FontSize="Medium"
-                    BorderWidth="2"
-                    BorderColor="#74CF9A"
-                    Text="Mexican"
-                    TextColor="#63DAB6"
-                    Grid.Row="11"
-                    Grid.ColumnSpan="3"
-                    WidthRequest="180"
-                    HorizontalOptions="Center"
-                    x:Name="ButtonMexican"/>
-                <Button
-                    FontSize="Medium"
-                    BorderWidth="2"
-                    BorderColor="#74CF9A"
-                    Text="Spanish"
-                    TextColor="#63DAB6"
-                    Grid.Row="12"
-                    Grid.ColumnSpan="3"
-                    WidthRequest="180"
-                    HorizontalOptions="Center"
-                    x:Name="ButtonSpanish"/>
-                <Button
-                    FontSize="Medium"
-                    BorderWidth="2"
-                    BorderColor="#74CF9A"
-                    Text="Thai"
-                    TextColor="#63DAB6"
-                    Grid.Row="13"
-                    Grid.ColumnSpan="3"
-                    WidthRequest="180"
-                    HorizontalOptions="Center"
-                    x:Name="ButtonThai"/>
                   </StackLayout>
 
             </Grid>
