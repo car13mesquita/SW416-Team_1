@@ -10,6 +10,7 @@ using Android.OS;
 using ImageCircle.Forms.Plugin.Droid;
 using Android.Graphics.Drawables;
 using Xamarin.Forms.Platform.Android;
+using Plugin.CurrentActivity;
 
 namespace MyShop.Droid
 {
@@ -21,6 +22,8 @@ namespace MyShop.Droid
 
             FormsAppCompatActivity.ToolbarResource = Resource.Layout.toolbar;
             FormsAppCompatActivity.TabLayoutResource = Resource.Layout.tabs;
+            //for camera access
+            Plugin.CurrentActivity.CrossCurrentActivity.Current.Activity = this;
             base.OnCreate (bundle);
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
@@ -32,6 +35,10 @@ namespace MyShop.Droid
 			ImageCircleRenderer.Init();
 
 		}
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
+        {
+            Plugin.Permissions.PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
 	}
 }
 

@@ -46,7 +46,7 @@
 			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="Auto"/>
 		</Grid.RowDefinitions>
 		<Grid.ColumnDefinitions>
@@ -55,6 +55,8 @@
 		</Grid.ColumnDefinitions>
 
 		<Label
+                        Grid.Row="0"
+                        Grid.Column="0"
 			FontAttributes="Bold"
 			FontSize="Medium"
 			Text="Store:"
@@ -68,6 +70,7 @@
 
 		<Label
 			Grid.Row="1"
+            Grid.Column="0"
 			FontAttributes="Bold"
 			FontSize="Medium"
 			Text="Service:"
@@ -91,6 +94,7 @@
 
 		<Label
 			Grid.Row="2"
+            Grid.Column="0"
 			FontAttributes="Bold"
 			FontSize="Medium"
 			Text="Date:"
@@ -104,6 +108,7 @@
 
 		<Label
 			Grid.Row="3"
+            Grid.Column="0"
 			FontAttributes="Bold"
 			FontSize="Medium"
 			Text="Rating:"
@@ -159,20 +164,20 @@
 			Placeholder="555-555-5555"
 			Keyboard="Telephone" />
 
-		<!--<Switch 
-			Grid.Row="6"
-			IsToggled="{Binding RequiresCall, Mode=TwoWay}"/>
-
-		<Label
-			Grid.Row="6"
-			Grid.Column="1"
-			FontSize="Medium"
-			Text="Request Callback"
-			TextColor="#3498DB"
-			VerticalOptions="Center"  />-->
+        <Button
+            x:Name = "TakePhoto"
+            Grid.Row="6"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            BackgroundColor="#74CF9A"
+            BorderRadius="0"
+            TextColor="White" 
+            Text="Take Photo"
+            Command="{Binding takePhoto}"/>
 
 		<Label
 			Grid.Row="7"
+            Grid.Column="0"
 			FontAttributes="Bold"
 			FontSize="Medium"
 			Text="Review:"
@@ -187,18 +192,20 @@
 			HeightRequest="150"
 			Text="{Binding Text}"
 			BackgroundColor="#103498DB"	/>
-
+        <Button
+            Grid.Row="9"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            x:Name="ButtonSubmitReview"
+            BackgroundColor="#74CF9A"
+            BorderRadius="0"
+            TextColor="White" 
+            Text="Submit"
+            Command="{Binding SaveReviewCommand}"/>
+               
 		
 	</Grid>
-
-	</ScrollView>
-	<Button 
-			x:Name="ButtonSubmitReview"
-			BackgroundColor="#74CF9A"
-			BorderRadius="0"
-			TextColor="White" 
-			Text="Submit"
-			Command="{Binding SaveReviewCommand}"/>
+    </ScrollView>
 	</StackLayout>	
 	</ContentPage.Content>
 </ContentPage>
