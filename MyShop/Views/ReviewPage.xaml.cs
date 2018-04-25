@@ -6,9 +6,8 @@ using Xamarin.Forms;
 namespace MyShop
 {
 
-    /*
-     * Based on https://github.com/jamesmontemagno/MediaPlugin License info below.
-     */
+    //Based on https://github.com/jamesmontemagno/MediaPlugin License info below.
+
     public partial class ReviewPage : ContentPage
     {
         ReviewViewModel viewModel;
@@ -17,6 +16,10 @@ namespace MyShop
             InitializeComponent();
             BindingContext = viewModel = new ReviewViewModel(this);
 
+            ButtonTakePhoto.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new CaptureMediaPage());
+            };
 
             PickerRating.SelectedIndex = 10;
             PickerServiceType.SelectedIndex = 0;

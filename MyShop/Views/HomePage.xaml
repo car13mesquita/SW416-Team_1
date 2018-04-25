@@ -17,7 +17,7 @@
 				<ColumnDefinition Width="*"/>
 			</Grid.ColumnDefinitions>
 
-      <Image
+            <Image
                 x:Name="HeroImage"
                 Grid.ColumnSpan="2"
 				Source="bowl.jpg"
@@ -40,6 +40,7 @@
 				BorderRadius="0"
 				TextColor="White" 
 				Text="Food List"/>
+            
             <Button 
                 x:Name="ButtonProfile"
                 Grid.Row="2"
