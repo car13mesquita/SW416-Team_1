@@ -25,10 +25,10 @@ namespace MyShop
                 await Navigation.PushAsync(new FoodListPage());
             };
 
-            if (Device.Idiom == TargetIdiom.Tablet)
+            ButtonProfile.Clicked += async (sender, e) =>
             {
-                HeroImage.Source = ImageSource.FromFile("herotablet.jpg");
-            }
+                await Navigation.PushAsync(new SelectUserProfilePage(null));
+            };
         }
     }
 }

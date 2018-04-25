@@ -8,6 +8,7 @@ namespace MyShop
     {
         Task Init();
         Task<IEnumerable<Store>> GetStoresAsync();
+        Task<IEnumerable<User>> GetUsersAsync();
         Task<Store> AddStoreAsync(Store store);
         Task<bool> RemoveStoreAsync(Store store);
         Task<Store> UpdateStoreAsync(Store store);
@@ -15,6 +16,7 @@ namespace MyShop
         Task<IEnumerable<Review>> GetReviewAsync();
         Task<bool> RemoveReviewAsync(Review review);
         Task SyncStoresAsync();
+        Task SyncUsersAsync();
         Task SyncReviewsAsync();
     }
 }

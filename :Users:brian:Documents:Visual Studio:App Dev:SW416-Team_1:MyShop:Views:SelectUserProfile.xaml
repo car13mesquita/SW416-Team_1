@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="MyShop.SelectUserProfilePage"
+    xmlns:design="clr-namespace:MyShop;assembly=MyShop"
+    Title="{Binding Title}"
+    IsBusy="{Binding IsBusy}">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10" x:Name="MainGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout
+                    Grid.Row="1"
+                    Grid.ColumnSpan="3"
+                    HorizontalOptions="Center"
+                    x:Name="AllergiesAndEthnicities">
+                    <Label 
+                        FontSize="Medium"
+                        Text="Allergies"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"/>
+                    <Button
+                        FontSize="Medium"
+                        BorderWidth="2"
+                        BorderColor="#74CF9A"
+                        Text="Select"
+                        TextColor="#63DAB6"
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"
+                        WidthRequest="150"
+                        Clicked="OnClick" />
+                    <Label
+                        Grid.ColumnSpan="3"
+                        HorizontalOptions="Center"
+                        x:Name="results" />                               
+                <Label 
+                    FontSize="Medium"
+                    Text="Ethnicities"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="3"
+                    HorizontalOptions="Center"/>
+                  </StackLayout>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

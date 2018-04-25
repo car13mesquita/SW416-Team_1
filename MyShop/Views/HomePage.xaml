@@ -10,6 +10,7 @@
 			<Grid.RowDefinitions>
 				<RowDefinition Height="*"/>
 				<RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
 			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="*"/>
@@ -39,6 +40,15 @@
 				BorderRadius="0"
 				TextColor="White" 
 				Text="Food List"/>
+            <Button 
+                x:Name="ButtonProfile"
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BackgroundColor="#74CF9A"
+                BorderRadius="0"
+                TextColor="White" 
+                Text="User Profiles"/>
 		
 		</Grid>
 	</ContentPage.Content>
