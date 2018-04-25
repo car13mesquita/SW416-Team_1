@@ -24,9 +24,9 @@ namespace MyShop
                 Button newButton = new Button()
                 {
                     BorderWidth = 2,
-                    BorderColor = Color.Black,
+                    BorderColor = Color.FromHex("#74CF9A"),
                     Text = ethnicity,
-                    TextColor = Color.Red,
+                    TextColor = Color.FromHex("#74CF9A"),
                 };
 
                 newButton.Clicked += OnButtonClicked;
