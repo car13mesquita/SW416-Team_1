@@ -8,9 +8,14 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="stores.json" />
+    <None Remove="stores %28copy%29.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\FoodListPage %28copy%29.xaml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="stores.json" />
+    <EmbeddedResource Include="users.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,11 +43,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Services\AzureDataStore.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="Views\ReviewPage.xaml.cs">
       <DependentUpon>ReviewPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\FoodListPage.xaml.cs">
       <DependentUpon>FoodListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SelectUserProfilePage.xaml.cs">
+      <DependentUpon>SelectUserProfilePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 

@@ -20,6 +20,12 @@ namespace MyShop.Services
             return await Task.Run(() => JsonConvert.DeserializeObject<List<Store>>(json));
         }
 
+        public async Task<IEnumerable<User>> GetUsersAsync()
+        {
+            var json = ResourceLoader.GetEmbeddedResourceString(Assembly.Load(new AssemblyName("MyShop")), "users.json");
+            return await Task.Run(() => JsonConvert.DeserializeObject<List<User>>(json));
+        }
+
         public async Task<Review> AddReviewAsync(Review review)
         {
             var emailTask = CrossMessaging.Current.EmailMessenger;
@@ -63,6 +69,11 @@ namespace MyShop.Services
         }
 
         public Task SyncStoresAsync()
+        {
+            return Task.Run(() => { });
+        }
+
+        public Task SyncUsersAsync()
         {
             return Task.Run(() => { });
         }

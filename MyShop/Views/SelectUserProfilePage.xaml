@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="MyShop.SelectUserProfilePage"
+    xmlns:design="clr-namespace:MyShop;assembly=MyShop"
+    BindingContext="{x:Static design:ViewModelLocator.SelectUserProfileViewModel}"
+    Title="{Binding Title}"
+    IsBusy="{Binding IsBusy}">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10" x:Name="MainGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout
+                    Grid.Row="1"
+                    Grid.ColumnSpan="3"
+                    HorizontalOptions="Center"
+                    x:Name="Users">
+                <Label 
+                    FontSize="Medium"
+                    Text="Select User Profile"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="3"
+                    HorizontalOptions="Center"/>
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
