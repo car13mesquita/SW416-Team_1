@@ -15,7 +15,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="stores.json" />
-    <EmbeddedResource Include="users.json" />
   </ItemGroup>
 
   <ItemGroup>

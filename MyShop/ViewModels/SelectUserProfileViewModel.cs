@@ -104,7 +104,7 @@ namespace MyShop
             }
 
             if (showAlert)
-                await page.DisplayAlert("Uh Oh :(", "Unable to gather stores.", "OK");
+                await page.DisplayAlert("Uh Oh :(", "Unable to gather profiles.", "OK");
 
 
         }
