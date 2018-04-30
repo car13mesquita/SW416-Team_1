@@ -2,15 +2,19 @@
   {
     //"id": "42d32dc3-d7bf-487b-901d-0e58584c1a7f",
     "id": "42d32dc3-d7bf-487b-901d-0e58584c1b8g",
-    "country": "Westeros",
-    "phoneNumber": "855-926-2746",
-    "image": "http://redstaryeast.com/wp-content/uploads/2014/10/bread-image-300x300.png",
-    "zipCode": "38764",
-    "state": "",
+    "Country": "Westeros",
+    "PhoneNumber": "855-926-2746",
+    "Image": "http://redstaryeast.com/wp-content/uploads/2014/10/bread-image-300x300.png",
+    "ZipCode": "38764",
+    "State": "",
     "city": "Essos",
-    "streetAddress": "42 Stonewall Lane",
+    "Street": "42 Stonewall Lane",
     "FirstName": "John",
-    "LastName": "Snow"
+    "LastName": "Snow",
+    "Email": "jsnow@tnw.org",
+    "Age": "32",
+    "Allergies": "white walkers"
+
   },
   {
     "id": "42d32dc3-d7bf-487b-901d-0e58584c1b9g",
@@ -22,6 +26,10 @@
     "city": "Essos",
     "streetAddress": "Briarwood Blvd",
     "FirstName": "Peter",
-    "LastName": "Rabbit" 
+    "LastName": "Rabbit",
+    "Email": "prabbit@fairytales.org",
+    "Age": "24",
+    "Allergies": "tomatoes"
+
   }
 ]
