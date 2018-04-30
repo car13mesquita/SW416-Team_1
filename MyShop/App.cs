@@ -33,6 +33,24 @@ namespace MyShop
             }
         }
 
+        static SelectUserProfileViewModel selectuserprofileViewModel;
+
+        public static SelectUserProfileViewModel SelectUserProfileViewModel
+        {
+            get
+            {
+                if (!UseDesignTime)
+                    return null;
+
+                if (storesViewModel != null)
+                    return selectuserprofileViewModel;
+
+                selectuserprofileViewModel = new SelectUserProfileViewModel(null);
+                selectuserprofileViewModel.GetUsersCommand.Execute(null);
+                return selectuserprofileViewModel;
+            }
+        }
+
         static StoreViewModel storeViewModel;
 
         public static StoreViewModel StoreViewModel

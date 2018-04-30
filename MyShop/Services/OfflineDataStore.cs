@@ -82,5 +82,10 @@ namespace MyShop.Services
         {
             return Task.FromResult(store);
         }
+
+        public Task<User> UpdateUserAsync(User user)
+        {
+            return Task.FromResult(user);
+        }
     }
 }

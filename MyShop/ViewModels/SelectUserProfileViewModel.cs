@@ -9,7 +9,7 @@ namespace MyShop
 {
     public class SelectUserProfileViewModel : ViewModelBase
     {
-        readonly IDataStore dataStore;
+        readonly IDataStore dataUser;
         public ObservableRangeCollection<User> Users { get; set; }
         public ObservableRangeCollection<Grouping<string, User>> UsersGrouped { get; set; }
         public bool ForceSync { get; set; }
@@ -18,7 +18,7 @@ namespace MyShop
         public SelectUserProfileViewModel(Page page) : base(page)
         {
             Title = "User Profiles";
-            dataStore = DependencyService.Get<IDataStore>();
+            dataUser = DependencyService.Get<IDataStore>();
             Users = new ObservableRangeCollection<User>();
             UsersGrouped = new ObservableRangeCollection<Grouping<string, User>>();
             FirstName = null;
@@ -88,7 +88,7 @@ namespace MyShop
             {
                 Users.Clear();
 
-                var users = await dataStore.GetUsersAsync();
+                var users = await dataUser.GetUsersAsync();
 
                 Users.ReplaceRange(users);
             }
@@ -104,13 +104,12 @@ namespace MyShop
             }
 
             if (showAlert)
-                await page.DisplayAlert("Uh Oh :(", "Unable to gather profiles.", "OK");
+                await page.DisplayAlert("Uh Oh :(", "There is an error", "OK");
 
 
         }
 
         /* Sorts all the stores by ethincty alphabetically */
-        /*
         private void Filter()
         {
 
@@ -118,14 +117,12 @@ namespace MyShop
 
             var sorted = from user in Users
 
-                         orderby user.Country, store.City
-                         group store by store.Ethnicity into storeGroup
-                         select new Grouping<string, Store>(storeGroup.Key, storeGroup);
-
-
+                         orderby user.Country
+                         group user by user.FirstName into userGroup
+                         select new Grouping<string, User>(userGroup.Key, userGroup);
+            
             UsersGrouped.ReplaceRange(sorted);
         }
-        */
        
     }
 
