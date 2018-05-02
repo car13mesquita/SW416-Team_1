@@ -25,20 +25,22 @@
 				HorizontalOptions="FillAndExpand"
 				VerticalOptions ="FillAndExpand"/>
 			<Button 
-				x:Name="ButtonFindStore"
+				x:Name="ButtonSearchEateries"
 				Grid.Row="1"
                 Grid.Column="0"
 				BackgroundColor="#74CF9A"
-				BorderRadius="0"
+				BorderRadius="5"
 				TextColor="White" 
+                Margin="5,5,2.5,5"
 				Text="Search Eateries"/>
             <Button 
 				x:Name="ButtonFoodList"
 				Grid.Row="1"
                 Grid.Column="1"
 				BackgroundColor="#74CF9A"
-				BorderRadius="0"
-				TextColor="White" 
+				BorderRadius="5"
+				TextColor="White"
+                Margin="2.5,5,5,5"
 				Text="Food List"/>
             
             <Button 
@@ -47,8 +49,9 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 BackgroundColor="#74CF9A"
-                BorderRadius="0"
+                BorderRadius="5"
                 TextColor="White" 
+                Margin="5,0,5,5"
                 Text="User Profiles"/>
 		
 		</Grid>

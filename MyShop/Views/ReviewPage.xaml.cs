@@ -22,8 +22,7 @@ namespace MyShop
             };
 
             PickerRating.SelectedIndex = 10;
-            PickerServiceType.SelectedIndex = 0;
-
+           
             PickerStore.SelectedIndexChanged += (sender, e) =>
             {
                 viewModel.StoreName = PickerStore.Items[PickerStore.SelectedIndex];
